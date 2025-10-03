@@ -3,63 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio halid</title>
+    <title>Portfolio Halid</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav><!-- liens de navigation sur la page -->
-        <h1 style="text-align: center;"> Halid </h1>
-        <h4 style="text-align: center;"> dévéloppeur d'application web</h4>
-        <!-- des ancre pour naviguer sur ma page (#)= une ancre -->
-          <a href="#presen-tation">présentation</a>
-          <a href="#techno-logie">mes technologie</a>
-          <a href="#realisa-tion">mes projets</a>
-          <a href="#cont-act">me contacter</a> 
+        <nav>
+            <!-- liens de navigation sur la page -->
+            <h1 style="text-align: center;">Halid</h1>
+            <h4 style="text-align: center;">Développeur d'application web</h4>
+            <!-- des ancres pour naviguer sur ma page (#)= une ancre -->
+            <a href="#presen-tation">Présentation</a>
+            <a href="#techno-logie">Mes technologies</a>
+            <a href="#realisa-tion">Mes projets</a>
+            <a href="#cont-act">Me contacter</a> 
         </nav>
-    </header> <hr>
+    </header> 
+
+    <hr>
+
     <main>
         <section>
-            <h2 id="presen-tation">Qui suis-je?</h2>
-            <article> 
-
-            </article>
-        </section>
-        <section>
-            <h2  id="techno-logie"> Mes outils</h2>
+            <h2 id="presen-tation">Qui suis-je ?</h2>
             <article>
-
+                <!-- présentation de mon profil (+ technique) -->
             </article>
         </section>
+
         <section>
-            <h2  id="realisa-tion"> Mes réalisation</h2>
+            <h2 id="techno-logie">Mes outils</h2>
             <article>
-
+                <!-- les technologie que j'utilise  -->
             </article>
         </section>
-    </main> <hr>
+
+        <section>
+            <h2 id="realisa-tion">Mes réalisations</h2>
+            <article>
+                <!-- les differents projets que j'ai réalisé -->
+            </article>
+        </section>
+    </main> 
+
+    <hr>
+
     <footer>
         <section>
-            <h2  id="cont-act">Me contacter</h2>
+            <h2 id="cont-act">Me contacter</h2>
             <!-- formulaire pour me contacter directement depuis le portfolio -->
+            <form action=".">
                 <fieldset>
-                    <legend> Me laisser un message </legend>
-                    <label for="user-name">Votre Nom:</label>
-                    <input type="text" name="nom" id="user-name" placeholder="Nom"> <br>
-                    <label for="user-mail"> Votre adresse Mail:</label>
-                    <input type="email" name="E-mail" id="user-mail" placeholder="E-mail">
-                    <p>Vous êtes:</p>
-                    <label for="recruteur">Recruteur</label>
+                    <legend>Me laisser un message</legend>
+
+                    <label for="user-name">Votre nom :</label>
+                    <input type="text" name="nom" id="user-name" placeholder="Nom" required><br>
+
+                    <label for="user-mail">Votre adresse mail :</label>
+                    <input type="email" name="E-mail" id="user-mail" placeholder="E-mail" required>
+
+                    <p>Vous êtes :</p>
+                    <label for="recruteur">Un recruteur</label>
                     <input type="radio" name="status" id="recruteur" value="Recruteur"><br>
-                    <label for="dev">dévéloppeur</label>
+
+                    <label for="dev">Un développeur</label>
                     <input type="radio" name="status" id="dev"><br>
+
                     <label for="oth">Autres</label>
-                    <input type="radio" name="status" id="oth"> <br>
-                    <label for="user-mess">Votre messages:</label>
-                    <textarea name="mess" id="user-mess"></textarea>
-                    <!-- utiliser <textarea> à la place de (input type text ) pour des zone de texte flexible  -->
+                    <input type="radio" name="status" id="oth"><br>
+
+                    <label for="user-mess">Votre message :</label>
+                    <textarea name="mess" id="user-mess"></textarea><br>
+                    <!-- utiliser <textarea> à la place de <input type="text"> pour des zones de texte flexibles -->
+
+                    <input type="submit" value="Envoyer"><br>
+                    <input type="reset" value="Effacer">
                 </fieldset>
-                <p> Me contacter autrement :</p>
+
+                <p>Me contacter autrement :</p>
                 <a href="mailto:halideyitayo5@gmail.com">halideyitayo5@gmail.com</a>
             </form>
         </section>
