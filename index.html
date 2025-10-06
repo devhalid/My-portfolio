@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Halid</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+            <h1 style="text-align: center;">Halid</h1>
+            <h2 style="text-align: center;">Développeur d'application web</h2>
         <nav>
             <!-- liens de navigation sur la page -->
-            <h1 style="text-align: center;">Halid</h1>
-            <h4 style="text-align: center;">Développeur d'application web</h4>
-            <!-- des ancres pour naviguer sur ma page (#)= une ancre -->
-            <a href="#presen-tation">Présentation</a>
-            <a href="#techno-logie">Mes technologies</a>
-            <a href="#realisa-tion">Mes projets</a>
-            <a href="#cont-act">Me contacter</a> 
+           
+            <a href="#presentation">Présentation</a>
+            <a href="#technologie">Mes technologies</a>
+            <a href="#realisation">Mes projets</a>
+            <a href="#contact">Me contacter</a> 
         </nav>
     </header> 
 
@@ -24,21 +23,29 @@
 
     <main>
         <section>
-            <h2 id="presen-tation">Qui suis-je ?</h2>
+            <h3 id="presentation">Qui suis-je ?</h3>
             <article>
                 <!-- présentation de mon profil (+ technique) -->
             </article>
         </section>
 
         <section>
-            <h2 id="techno-logie">Mes outils</h2>
+            <h3 id="technologie">Mes outils</h3>
             <article>
                 <!-- les technologie que j'utilise  -->
+                 <p> 
+                    Actuellement en formation, le catalogue de mes outils 
+                    technologiques notamment les langages informatique n'est,
+                    pas très enrichie. <br>Ainsi j'ai comme maîtrise le HTML5 
+                    ( Hypertext makeup langage ) qui est le langage de balisage 
+                    que j'utilise pour mes projet.
+                </p>
+                <img src="Introduction to HTML_certificate.jpg" alt="le document de ma certification en language html" title="ma certification en html" width="550" height="380">
             </article>
         </section>
 
         <section>
-            <h2 id="realisa-tion">Mes réalisations</h2>
+            <h3 id="realisation">Mes réalisations</h3>
             <article>
                 <!-- les differents projets que j'ai réalisé -->
             </article>
@@ -49,38 +56,35 @@
 
     <footer>
         <section>
-            <h2 id="cont-act">Me contacter</h2>
+            <h3 id="contact">Me contacter</h3>
             <!-- formulaire pour me contacter directement depuis le portfolio -->
             <form action=".">
-                <fieldset>
-                    <legend>Me laisser un message</legend>
 
                     <label for="user-name">Votre nom :</label>
                     <input type="text" name="nom" id="user-name" placeholder="Nom" required><br>
 
                     <label for="user-mail">Votre adresse mail :</label>
                     <input type="email" name="E-mail" id="user-mail" placeholder="E-mail" required>
-
-                    <p>Vous êtes :</p>
+                    
+                 <fieldset>
+                    <legend>Vous êtes :</legend>
                     <label for="recruteur">Un recruteur</label>
                     <input type="radio" name="status" id="recruteur" value="Recruteur"><br>
 
                     <label for="dev">Un développeur</label>
-                    <input type="radio" name="status" id="dev"><br>
+                    <input type="radio" name="status" id="dev" value="dévéloppeur"> <br>
 
                     <label for="oth">Autres</label>
-                    <input type="radio" name="status" id="oth"><br>
-
+                    <input type="radio" name="status" id="oth" value="autres"><br>
+                 </fieldset>   
                     <label for="user-mess">Votre message :</label>
                     <textarea name="mess" id="user-mess"></textarea><br>
-                    <!-- utiliser <textarea> à la place de <input type="text"> pour des zones de texte flexibles -->
 
                     <input type="submit" value="Envoyer"><br>
                     <input type="reset" value="Effacer">
-                </fieldset>
-
+                
                 <p>Me contacter autrement :</p>
-                <a href="mailto:halideyitayo5@gmail.com">halideyitayo5@gmail.com</a>
+                <a href="mailto:halideyitayo5{@}gmail.com">halideyitayo5{@}gmail.com</a>
             </form>
         </section>
     </footer>
