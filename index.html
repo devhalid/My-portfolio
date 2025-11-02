@@ -4,18 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Halid</title>
+    <style>
+
+        body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: #F7F7F7;
+        
+        }
+
+        .title{
+        text-align: center;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+            margin-right: 1rem;
+            
+        }
+
+        a:hover{
+            color: darksalmon;
+        }
+        a:active{
+            color: hotpink;
+        }
+
+        h1, h2, h3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        }
+
+        header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #ffffff;
+        padding: 15px 30px;
+        border-bottom: 1px solid #E5E7EB;
+        }
+        
+        input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 12px;
+        border: 1px solid #2c62b3;
+        border-radius: 8px;
+        font-size: 16px;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-            <h1 style="text-align: center;">Halid</h1>
-            <h2 style="text-align: center;">Développeur d'application web</h2>
+            <div class="title">
+                <h1>Halid</h1>
+                <h2>Développeur d'application web</h2>   
+            </div>
+            
         <nav>
             <!-- liens de navigation sur la page -->
-           
+            
             <a href="#presentation">Présentation</a>
             <a href="#technologie">Mes technologies</a>
             <a href="#realisation">Mes projets</a>
-            <a href="#contact">Me contacter</a> 
+            <a href="#contact">Me contacter</a>
         </nav>
     </header> 
 
@@ -40,7 +95,13 @@
                     ( Hypertext makeup langage ) qui est le langage de balisage 
                     que j'utilise pour mes projet.
                 </p>
-                <img src="Introduction to HTML_certificate.jpg" alt="le document de ma certification en language html" title="ma certification en html" width="550" height="380">
+                <figure>
+                    <img src="Introduction to HTML_certificate.jpg"
+                         alt="Document de ma certification en HTML"
+                         title="Ma certification en HTML"
+                         width="550" height="380">
+                    <figcaption> Ma certification en HTML5</figcaption>
+                </figure>
             </article>
         </section>
 
@@ -55,15 +116,16 @@
     <hr>
 
     <footer>
-        <section>
+        <section class="bas ">
             <h3 id="contact">Me contacter</h3>
+            <p>Vous pouvez m'écrire directement via ce formulaire :</p>
             <!-- formulaire pour me contacter directement depuis le portfolio -->
             <form action=".">
 
-                    <label for="user-name">Votre nom :</label>
+                    <label for="user-name">Votre nom :</label><br>
                     <input type="text" name="nom" id="user-name" placeholder="Nom" required><br>
 
-                    <label for="user-mail">Votre adresse mail :</label>
+                    <label for="user-mail">Votre adresse mail :</label><br>
                     <input type="email" name="E-mail" id="user-mail" placeholder="E-mail" required>
                     
                  <fieldset>
@@ -77,7 +139,7 @@
                     <label for="oth">Autres</label>
                     <input type="radio" name="status" id="oth" value="autres"><br>
                  </fieldset>   
-                    <label for="user-mess">Votre message :</label>
+                    <label for="user-mess">Votre message :</label><br>
                     <textarea name="mess" id="user-mess"></textarea><br>
 
                     <input type="submit" value="Envoyer"><br>
